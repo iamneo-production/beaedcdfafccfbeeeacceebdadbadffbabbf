@@ -49,8 +49,7 @@ export default function Stopwatch(props){
             {
             !isActive && !isPaused?
               <button onClick={handleStart} data-testid='start'>Start</button>
-              : (
-                !isPaused ? <button data-testid='pause' onClick={handlePause}>Pause</button> :  <button data-testid='resume' onClick={handleResume}>Resume</button>
+              : ( !isPaused ? <button data-testid='pause' onClick={handlePause}>Pause</button> :  <button data-testid='resume' onClick={handleResume}>Resume</button>
               )
             }
 
